@@ -2,7 +2,7 @@
 
 partial class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
         SectionTitle("* Changing Terminal Color");
 
@@ -12,6 +12,9 @@ partial class Program
         // Compress("brotli");
         // ArchiveContent();
 
-        Encode();
+        // Encode();
+        // SerializeXml();
+        await SerializeJsonAsync();
+        // await DeserializeJsonAsync();
     }
 }

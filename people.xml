@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Person>
+    <FirstName>John</FirstName>
+    <LastName>Doe</LastName>
+    <DateOfBirth>1980-05-15T00:00:00</DateOfBirth>
+    <Children>
+      <Person>
+        <FirstName>Child1</FirstName>
+        <LastName>Doe</LastName>
+        <DateOfBirth>2010-03-10T00:00:00</DateOfBirth>
+        <Children />
+        <Salary>0</Salary>
+      </Person>
+      <Person>
+        <FirstName>Child2</FirstName>
+        <LastName>Doe</LastName>
+        <DateOfBirth>2012-07-05T00:00:00</DateOfBirth>
+        <Children />
+        <Salary>0</Salary>
+      </Person>
+    </Children>
+    <Salary>75000.50</Salary>
+  </Person>
+  <Person>
+    <FirstName>Jane</FirstName>
+    <LastName>Doe</LastName>
+    <DateOfBirth>1985-08-22T00:00:00</DateOfBirth>
+    <Children />
+    <Salary>80000.75</Salary>
+  </Person>
+</ArrayOfPerson>
