@@ -15,3 +15,11 @@ jobs:
         with:
           name: output-log-file
           path: ./output.log
+
+  download-artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: downlaod file
+        uses: actions/download-artifact@v3
+        with:
+          name: output-log-file
