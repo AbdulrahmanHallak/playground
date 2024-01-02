@@ -9,10 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -run: expr HelloWorld > output.log
-      
-      -name: upload output file
-       uses: actions/upload-artifact@v3
-       with:
+      - run: expr HelloWorld > output.log
+      - name: upload output file
+        uses: actions/upload-artifact@v3
+        with:
           name: output-log-file
           path: ./output.log
