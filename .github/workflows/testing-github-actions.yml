@@ -1,0 +1,20 @@
+name: check-dotnet-version
+
+run-name: ${{ github.actor }} is checking dotnet 
+
+on: [push]
+
+jobs:
+  checks-dotnet-version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: "8.0.100"
+
+      - run: dotnet build Playground.csproj
+
+      - run: dotnet --version
