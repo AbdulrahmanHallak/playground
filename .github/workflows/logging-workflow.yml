@@ -1,0 +1,18 @@
+name: "output something"
+
+run-name: ${{ github.actor }} is logging
+
+on: [push]
+
+jobs:
+  log-a-message:
+    runs-on: ubuntu-latest
+
+    steps:
+      -run: expr HelloWorld > output.log
+      
+      -name: upload output file
+       uses: actions/upload-artifact@v3
+       with:
+          name: output-log-file
+          path: ./output.log
