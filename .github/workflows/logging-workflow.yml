@@ -17,6 +17,7 @@ jobs:
           path: ./output.log
 
   download-artifact:
+    needs: log-a-message
     runs-on: ubuntu-latest
     steps:
       - name: downlaod file
