@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo ${{env.ALO_HAMOSH}}
-      - run: echo ${{ HELLO_AAM }}
+      - run: echo ${{ env.HELLO_AAM }}
