@@ -4,5 +4,5 @@ jobs:
   output-variables:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{env.ALO_HAMOSH}}
-      - run: echo ${{ env.HELLO_AAM }}
+      - run: echo ${{vars.ALO_HAMOSH}}
+      - run: echo ${{ secrets.HELLO_AAM }}
