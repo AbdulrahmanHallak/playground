@@ -1,0 +1,8 @@
+run-name: hello
+on: [push]
+jobs:
+  output-variables:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$ALO_HAMOSH"
+      - run: echo "$HELLO_AAM"
