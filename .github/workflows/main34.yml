@@ -2,6 +2,7 @@ run-name: hello
 on: [push]
 env:
   HHo: ${{ vars.HELLO_AAM }}
+  HO: ${{ secrets.ALO_HAMOSH }}
 jobs:
   output-variables:
     runs-on: ubuntu-latest
@@ -10,4 +11,4 @@ jobs:
         env:
           ALO_HAMOSH: ${{vars.ALO_HAMOSH}}
           Baby: Hello
-      - run: echo ${{ secrets.HELLO_AAM }}
+      - run: echo "$HO"
